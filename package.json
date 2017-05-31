@@ -1,0 +1,19 @@
+{
+  "name": "wa-clone",
+  "version": "1.0.0",
+  "description": "Repo for project-based class.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joshteng/wa-clone.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshteng/wa-clone/issues"
+  },
+  "homepage": "https://github.com/joshteng/wa-clone#readme"
+}
