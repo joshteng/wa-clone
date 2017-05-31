@@ -4,7 +4,12 @@
   "description": "Repo for project-based class.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -Rf dist && babel src -d dist",
+    "babel-node": "babel-node",
+    "nodemon": "nodemon --exec npm run babel-node",
+    "lint": "eslint",
+    "postinstall": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -15,5 +20,17 @@
   "bugs": {
     "url": "https://github.com/joshteng/wa-clone/issues"
   },
-  "homepage": "https://github.com/joshteng/wa-clone#readme"
+  "homepage": "https://github.com/joshteng/wa-clone#readme",
+  "dependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-plugin-react": "^7.0.1"
+  },
+   "engines": {
+      "node": "7.10.0",
+      "npm": "4.2.0"
+    }
 }
